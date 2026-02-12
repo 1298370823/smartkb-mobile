@@ -1,0 +1,42 @@
+[
+  {
+    "id": "QA00001",
+    "category": "许可证授权",
+    "question": "Error while Resizing pool seeyon. Exception: License file expired",
+    "answer": "许可证文件已过期。解决方案：1. 重新申请正式授权文件；2. 替换安装目录下的 license.dat；3. 重启中间件服务。",
+    "keywords": "license, 过期, 授权, seeyon",
+    "source": "内置示例"
+  },
+  {
+    "id": "QA00002",
+    "category": "数据库",
+    "question": "连接数据库失败，报错：Connection refused",
+    "answer": "数据库连接被拒绝。请检查：1. 数据库服务是否启动；2. 连接地址和端口是否正确；3. 防火墙是否放行；4. 连接池配置是否超限。",
+    "keywords": "数据库, 连接失败, 拒绝连接",
+    "source": "内置示例"
+  },
+  {
+    "id": "QA00003",
+    "category": "内存溢出",
+    "question": "java.lang.OutOfMemoryError: Java heap space",
+    "answer": "Java堆内存溢出。解决方案：1. 增加JVM堆内存（-Xmx）；2. 检查内存泄漏；3. 优化代码，减少对象创建；4. 升级硬件配置。",
+    "keywords": "内存溢出, OOM, 堆内存",
+    "source": "内置示例"
+  },
+  {
+    "id": "QA00004",
+    "category": "类加载",
+    "question": "ClassNotFoundException: com.example.SomeClass",
+    "answer": "类找不到。请检查：1. 依赖JAR包是否完整；2. 类路径配置是否正确；3. 是否存在版本冲突；4. 检查部署包结构。",
+    "keywords": "类找不到, ClassNotFoundException, 依赖缺失",
+    "source": "内置示例"
+  },
+  {
+    "id": "QA00005",
+    "category": "版本冲突",
+    "question": "NoSuchMethodError: org.springframework.xxx",
+    "answer": "方法不存在，通常由依赖版本冲突引起。解决方案：1. 统一Spring版本；2. 使用maven依赖树排查冲突；3. 排除传递依赖。",
+    "keywords": "版本冲突, 方法不存在, NoSuchMethodError",
+    "source": "内置示例"
+  }
+]
