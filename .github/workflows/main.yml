@@ -27,13 +27,16 @@ jobs:
           pip install --upgrade pip
           pip install Cython buildozer
           
+      - name: Clean previous build artifacts  # 新增：清理缓存
+        run: |
+          rm -rf .buildozer
+          rm -rf bin
+          
       - name: Clear NDK environment and build APK
         run: |
-          # 彻底清除系统 NDK 环境变量（关键！）
           unset ANDROID_NDK
           unset ANDROID_NDK_HOME
           unset ANDROID_NDK_ROOT
-          # 执行打包
           buildozer android debug
           
       - name: Upload APK
