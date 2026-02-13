@@ -5,7 +5,7 @@ package.domain = org.smartkb
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,txt,json
 version = 1.0.0
-requirements = python3,kivy,jieba
+requirements = python3,kivy,jieba,pyjnius==1.6.0,cython>=3.0
 android.permissions = INTERNET, READ_EXTERNAL_STORAGE
 android.api = 30
 android.minapi = 21
@@ -16,3 +16,4 @@ android.accept_sdk_license = True
 
 [buildozer]
 log_level = 2   # 开启详细日志（便于调试）
+
